@@ -1,16 +1,20 @@
-<html ng-app>
-    <head>
-    </head>
-    <body>
-      <div ng-controller="TestCtrl"><h1>{{title}}</h1>
-       <input type="text" ng-model="title">
-      </div>
-        <script src="lib/jquery-3.3.1.min.js"></script>
-        <script src="lib/angular.min.js"></script>
-        <script>
-          function TestCtrl($scope) {
-            $scope.title = 'Write a title here...';
-          };
-        </script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta chrset="UTF 8">
+  <title>Guru99</title>
+</head>
+
+<body ng-app="app">
+  <h1 ng-controller="HelloWorldCtrl">{{message}}</h1>
+  <script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+  <script>
+    angular.module("app", []).controller("HelloWorldCtrl", function($scope) {
+      $scope.message = "Hello World"
+    })
+  </script>
+
+</body>
+
 </html>
