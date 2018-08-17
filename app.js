@@ -1,5 +1,7 @@
-angular.module('app',[]).controller('HelloWorldCtrl',function($scope)
-{
+var app = angular.module("DemoApp", []);
+app.controller("DemoController", function($scope) {
 
-	$scope.message = "Hello World"
-});
+  $scope.fullName=function(firstName,lastname){
+  return firstName + lastname;
+  }
+} );
