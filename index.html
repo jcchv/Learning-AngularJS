@@ -4,19 +4,20 @@
 <head>
   <meta chrset="UTF 8">
   <title>jcchv</title>
+  <link rel="stylesheet" href="css/bootstrap.css" />
 </head>
 
 <body ng-app="DemoApp">
   <h1> jcchv Global Event</h1>
 
-  <div ng-app="DemoApp" ng-controller="DemoController">
-    <h1>Topics</h1>
-    <ul>
-      <li ng-repeat="tpname in TopicNames">
-        {{tpname.name}}
-      </li>
-    </ul>
+  <div ng-app="DemoApp">
+    <div ng-controller="firstcontroller">
+      <div ng-controller="secondcontroller">
+        {{lname}}
+      </div>
+    </div>
   </div>
+
   <script src="lib/angular.js"></script>
   <script src="app.js"></script>
   <script type="text/javascript">
