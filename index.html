@@ -3,21 +3,20 @@
 
 <head>
   <meta chrset="UTF 8">
-  <title>jcchv</title>
+  <title>Learning Angular</title>
   <link rel="stylesheet" href="css/bootstrap.css" />
 </head>
 
 <body ng-app="DemoApp">
-  <h1> jcchv Global Event</h1>
+  <h1>Global Event</h1>
 
   <div ng-app="DemoApp" ng-controller="DemoCtrl">
-  	<form>
-  		&nbsp;&nbsp;&nbsp;Topic Description:<br> <br>
-  		&nbsp;&nbsp;&nbsp;
-  	<textarea rows="4" cols="50" ng-model="pDescription"></textarea><br><br> 
-  	</form>
+    <form>
+      &nbsp;&nbsp;&nbsp;Topic Description:<br> <br> &nbsp;&nbsp;&nbsp; Name : <input type="text" ng-model="pname"><br> &nbsp;&nbsp;&nbsp; Topic : <br>&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" ng-model="Topic.Controller">Controller<br>&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" ng-model="Topic.Models">Models
+    </form>
   </div>
-
 
   <script src="lib/angular.js"></script>
   <script src="app.js"></script>
