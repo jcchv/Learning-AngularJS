@@ -10,13 +10,14 @@
 <body ng-app="DemoApp">
   <h1> jcchv Global Event</h1>
 
-  <div ng-app="DemoApp">
-    <div ng-controller="firstcontroller">
-      <div ng-controller="secondcontroller">
-        {{lname}}
-      </div>
-    </div>
+  <div ng-app="DemoApp" ng-controller="DemoCtrl">
+  	<form>
+  		&nbsp;&nbsp;&nbsp;Topic Description:<br> <br>
+  		&nbsp;&nbsp;&nbsp;
+  	<textarea rows="4" cols="50" ng-model="pDescription"></textarea><br><br> 
+  	</form>
   </div>
+
 
   <script src="lib/angular.js"></script>
   <script src="app.js"></script>

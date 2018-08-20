@@ -1,7 +1,3 @@
-var app = angular.module('DemoApp', []);
-app.controller('firstcontroller', function($scope) {
-  $scope.pname = "firstcontroller";
-});
-app.controller('secondcontroller', function($scope) {
-  $scope.lname = "secondcontroller";
-});
+var app = angular.module('DemoApp',[]);
+	app.controller('DemoCtrl', function($scope){
+		$scope.pDescription="This topic looks at how Angular JS works \nModels in Angular JS"});
