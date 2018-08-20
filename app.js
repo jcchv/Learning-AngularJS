@@ -1,9 +1,9 @@
-var app = angular.module('DemoApp', []);
-app.controller('DemoCtrl', function($scope) {
-  $scope.pname = "Juan";
+var app = angular.module('DemoApp',[]);
+	app.controller('DemoCtrl', function($scope){
+	$scope.pName="Guru99";
 
-  $scope.Topic = {
-    Controller: true,
-    Models: false
-  };
-});
+		$scope.Topics =
+		{
+			option1 : "Controller",
+			option2 : "Module"
+		};     });
