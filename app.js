@@ -23,3 +23,10 @@ var app = angular.module('sampleApp',["ngRoute"]);
         $scope.message = "This is display an Event";
 
     });
+
+		app.controller('AngularController',function($scope){
+        $scope.a=1;
+        $scope.b=1;
+
+        $scope.value=$scope.$eval('a+b');
+    });
