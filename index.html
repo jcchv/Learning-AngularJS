@@ -10,17 +10,9 @@
 <h1>Learning Angular Event</h1>
 
 <div ng-app="DemoApp" ng-controller="DemoController">
-    Tutorial Name : <input type="text" ng-model="tutorialName"><br>
-    <br>
-    This tutorial is {{tutorialName | lowercase}}
-    <br>
-    This tutorial is {{tutorialName | uppercase}}
-    <br>
-    This tutorialID is {{tutorialID | number:2}}
-    <br>
-    This tutorial Price is {{tutorialprice | currency}}
-    <br>
-    This tutorial is {{tutorial | json}}
+
+    This tutorial is {{tutorial | Demofilter}}
+
 </div>
   <script src="lib/angular.js"></script>
   <script src="lib/angular-route.js"></script>
