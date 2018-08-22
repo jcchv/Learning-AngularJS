@@ -9,10 +9,15 @@
 
 <h1>Learning Angular Event</h1>
 
-<div ng-app="DemoApp" ng-controller="DemoController">
-
-    This tutorial is {{tutorial | Demofilter}}
-
+<div ng-app="" ng-init="chapters=['Controllers','Models','Filters'];quantity=1;price=5">
+    <ul>
+        <li ng-repeat="names in chapters">
+            {{names}}
+        </li>
+    </ul>
+    People : <input type="number" ng-model="quantity">
+        Registration Price : <input type="number" ng-model="price">
+        Total : {{quantity * price}}
 </div>
   <script src="lib/angular.js"></script>
   <script src="lib/angular-route.js"></script>
