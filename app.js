@@ -1,16 +1,8 @@
 var app = angular.module('DemoApp',[]);
 
-app.controller('DemoController',function() {
-		this.tutorialName = "Angular";
+    app.directive('ngCustom',function(){
+        return {
 
-});
-
- app.directive('ngCustom',function(){
-		return {
-		 controller: 'DemoController',
-
-			controllerAs: 'ctrl',
-
-			template: '{{ctrl.tutorialName}}'
- };
-});
+            template: '&nbsp;&nbsp;Name <input type="text"><br><br>&nbsp;&nbsp;&nbsp;Age<input type="text">'
+        };
+    });
