@@ -1,12 +1,16 @@
 var app = angular.module('DemoApp',[]);
 
-app.controller('DemoController',function($scope) {
-		$scope.tutorialName = "Angular JS";
+app.controller('DemoController',function() {
+		this.tutorialName = "Angular";
 
 });
 
-		app.directive('ngCustom',function(){
+ app.directive('ngCustom',function(){
 		return {
-		 template: '<div>{{tutorialName}}</div>'
- }
+		 controller: 'DemoController',
+
+			controllerAs: 'ctrl',
+
+			template: '{{ctrl.tutorialName}}'
+ };
 });
