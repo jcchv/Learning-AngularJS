@@ -1,8 +1,12 @@
 var app = angular.module('DemoApp',[]);
 
-    app.directive('ngCustom',function(){
+    app.directive('pane',function(){
         return {
 
-            template: '&nbsp;&nbsp;Name <input type="text"><br><br>&nbsp;&nbsp;&nbsp;Age<input type="text">'
+            transclude:true,
+            scope :{title:'@'},
+            template: '<div style="border: 1px solid black;"> '+
+                        '<ng-transclude></ng-transclude>'+
+                            '</div>'
         };
     });
