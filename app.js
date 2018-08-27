@@ -1,16 +1,10 @@
 var app = angular.module('DemoApp',[]);
 
-    app.directive('outer',function(){
+    app.directive('ngEvent',function(){
         return {
 
-            restrict:'E',
-            template: '<div><h1>Outer</h1><inner></inner></div>',
+            link:function($scope,element,attrs) {
+                element.bind('click',function () {
+                    element.html('You clicked me'+Math.random());
+                });}
         }});
-
-    app.directive('inner',function(){
-        return {
-
-            restrict:'E',
-            template: '<div><h1>Inner</h1></div>',
-        }
-    });
