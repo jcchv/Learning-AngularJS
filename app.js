@@ -1,12 +1,16 @@
 var app = angular.module('DemoApp',[]);
 
-    app.directive('pane',function(){
+    app.directive('outer',function(){
         return {
 
-            transclude:true,
-            scope :{title:'@'},
-            template: '<div style="border: 1px solid black;"> '+
-                        '<ng-transclude></ng-transclude>'+
-                            '</div>'
-        };
+            restrict:'E',
+            template: '<div><h1>Outer</h1><inner></inner></div>',
+        }});
+
+    app.directive('inner',function(){
+        return {
+
+            restrict:'E',
+            template: '<div><h1>Inner</h1></div>',
+        }
     });
